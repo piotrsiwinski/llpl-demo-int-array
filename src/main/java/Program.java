@@ -5,7 +5,7 @@ import com.intel.pmem.llpl.TransactionalHeap;
 
 public class Program {
   public static void main(String[] args) {
-    String heapName = "/mnt/mem/int_array_example";
+    String heapName = "/mnt/mem/int_array_example2";
     TransactionalHeap heap = TransactionalHeap.exists(heapName)
         ? TransactionalHeap.openHeap(heapName)
         : TransactionalHeap.createHeap(heapName, 500_000_000L);
